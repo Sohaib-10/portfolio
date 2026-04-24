@@ -548,7 +548,7 @@ export default function App() {
               />
               <ProjectCard 
                 title="Algorithmic Data Analyzer"
-                stack="Algorithms · C++"
+                stack="Algorithms · Python"
                 description="Optimized scalable algorithms for automated data analysis. Significantly reduced time complexity and resource overhead."
                 delay={0.3}
                 imageUrl={`${import.meta.env.BASE_URL}WhatsApp Image 2026-04-24 at 12.31.42 AM.jpeg`}

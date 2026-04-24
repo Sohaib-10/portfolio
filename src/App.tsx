@@ -522,7 +522,7 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <ProjectCard 
                 title="OptiSpace"
-                stack="React · Node · Postgre"
+                stack="React · Node · PostgreSQL"
                 description="A smart campus facility booking and utilization system with a recommendation engine to suggest optimal spaces based on usage patterns."
                 delay={0}
                 imageUrl={`${import.meta.env.BASE_URL}Gemini_Generated_Image_mzzqnfmzzqnfmzzq.png`}

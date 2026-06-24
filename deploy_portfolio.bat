@@ -24,6 +24,10 @@ git config user.name "Sohaib-10"
 git config core.autocrlf false
 
 echo.
+echo [3.5/5] Adding .nojekyll to bypass GitHub Pages processing...
+type NUL > .nojekyll
+
+echo.
 echo [4/5] Committing...
 git add .gitattributes
 git add -A
@@ -39,4 +43,3 @@ echo ============================================
 echo  DONE! Wait 1 min then visit:
 echo  https://sohaib-10.github.io/portfolio/
 echo ============================================
-pause

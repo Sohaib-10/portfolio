@@ -651,13 +651,6 @@ const Skills = () => {
 const Certifications = () => {
   const certs = [
     {
-      name: 'Cyber Job Simulation',
-      issuer: 'Forage · Deloitte Australia',
-      date: '2024',
-      image: `${basePath}Forage.jpeg`,
-      link: 'https://www.linkedin.com/in/sohaib-tausif-3a2153394/details/certifications/'
-    },
-    {
       name: 'Introduction to Cybersecurity',
       issuer: 'Cisco Networking Academy',
       date: '2024',
@@ -893,6 +886,9 @@ const Labs = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white tracking-tight">Hack The Box</h3>
+                <p className="text-[11px] font-bold text-white/30 uppercase tracking-widest mt-0.5">
+                  Machine Exploitation
+                </p>
               </div>
             </div>
 
@@ -969,6 +965,9 @@ const Labs = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white tracking-tight">TryHackMe</h3>
+                <p className="text-[11px] font-bold text-white/30 uppercase tracking-widest mt-0.5">
+                  Security Learning Paths
+                </p>
               </div>
             </div>
 
@@ -1014,35 +1013,107 @@ const Labs = () => {
             </div>
           </motion.div>
 
-          {/* Burp Suite Column */}
+          {/* Forage Column */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ delay: 0.3, duration: 0.8, ease }}
-            className="glass-panel rounded-[24px] md:rounded-[32px] group glass-hover p-8 md:p-10 relative overflow-hidden flex flex-col h-full md:col-span-2"
+            className="glass-panel rounded-[24px] md:rounded-[32px] group glass-hover p-8 md:p-10 relative overflow-hidden flex flex-col h-full"
           >
-            <div className="absolute -right-10 -top-10 w-40 h-40 bg-[#FF6633]/5 rounded-full blur-[40px] group-hover:bg-[#FF6633]/10 transition-colors duration-500 pointer-events-none" />
+            <div className="absolute -right-10 -top-10 w-40 h-40 bg-[#00A3FF]/5 rounded-full blur-[40px] group-hover:bg-[#00A3FF]/10 transition-colors duration-500 pointer-events-none" />
 
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 pb-6 border-b border-white/5">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 border border-white/10 group-hover:border-[#FF6633]/30 transition-all">
-                  <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="#FF6633" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    <path d="M8 11h8" />
-                    <path d="M12 8v6" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white tracking-tight">Burp Suite</h3>
-                  <p className="text-[11px] font-bold text-white/30 uppercase tracking-widest mt-0.5">
-                    Access Control Assessment
-                  </p>
-                </div>
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 border border-white/10 group-hover:border-[#00A3FF]/30 transition-all">
+                <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="#00A3FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  <rect x="2" y="6" width="20" height="14" rx="2" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white tracking-tight">Forage</h3>
+                <p className="text-[11px] font-bold text-white/30 uppercase tracking-widest mt-0.5">
+                  Virtual Job Simulations
+                </p>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
+            <div className="space-y-8 flex-grow">
+              <div>
+                <h4 className="text-[12px] font-bold text-white/30 uppercase tracking-widest mb-4">
+                  Completed Simulations
+                </h4>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_69f68f777cb9723a4c3dc75a_1777767005976_completion_certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3.5 py-1.5 rounded-full border border-[#00A3FF]/20 bg-[#00A3FF]/5 text-[11px] font-bold text-[#00A3FF] uppercase tracking-widest transition-colors hover:bg-[#00A3FF]/15 flex items-center gap-1.5"
+                  >
+                    Deloitte Australia · Cyber Security <ExternalLink className="w-3 h-3" />
+                  </a>
+                  <a
+                    href="https://www.theforage.com/completion-certificates/mfxGwGDp6WkQmtmTf/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_69f68f777cb9723a4c3dc75a_1787162114279_completion_certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3.5 py-1.5 rounded-full border border-[#00A3FF]/20 bg-[#00A3FF]/5 text-[11px] font-bold text-[#00A3FF] uppercase tracking-widest transition-colors hover:bg-[#00A3FF]/15 flex items-center gap-1.5"
+                  >
+                    Mastercard · Cybersecurity <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-[12px] font-bold text-white/30 uppercase tracking-widest mb-4">
+                  Key Tasks & Analysis
+                </h4>
+                <div className="flex flex-wrap gap-3">
+                  {[
+                    'Cyber Threat Analysis',
+                    'Log & Traffic Triage',
+                    'Phishing Analysis',
+                    'Security Proposal & Mitigation',
+                    'Malware Analysis'
+                  ].map((task) => (
+                    <span
+                      key={task}
+                      className="px-3.5 py-1.5 rounded-full border border-[#00A3FF]/20 bg-[#00A3FF]/5 text-[11px] font-bold text-[#00A3FF] uppercase tracking-widest transition-colors hover:bg-[#00A3FF]/10"
+                    >
+                      {task}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Burp Suite Column */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: 0.4, duration: 0.8, ease }}
+            className="glass-panel rounded-[24px] md:rounded-[32px] group glass-hover p-8 md:p-10 relative overflow-hidden flex flex-col h-full"
+          >
+            <div className="absolute -right-10 -top-10 w-40 h-40 bg-[#FF6633]/5 rounded-full blur-[40px] group-hover:bg-[#FF6633]/10 transition-colors duration-500 pointer-events-none" />
+
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 border border-white/10 group-hover:border-[#FF6633]/30 transition-all">
+                <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="#FF6633" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M8 11h8" />
+                  <path d="M12 8v6" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white tracking-tight">Burp Suite</h3>
+                <p className="text-[11px] font-bold text-white/30 uppercase tracking-widest mt-0.5">
+                  Access Control Assessment
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-8 flex-grow">
               <div>
                 <h4 className="text-[12px] font-bold text-white/30 uppercase tracking-widest mb-4">
                   Vulnerabilities Tested

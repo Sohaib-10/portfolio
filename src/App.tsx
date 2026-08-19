@@ -89,9 +89,8 @@ const Navbar = ({ activeSection }: NavbarProps) => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className={`text-[13px] font-semibold tracking-tight transition-colors py-2 relative flex flex-col items-center ${
-                    isActive ? 'text-white font-bold' : 'text-white/50 hover:text-white'
-                  }`}
+                  className={`text-[13px] font-semibold tracking-tight transition-colors py-2 relative flex flex-col items-center ${isActive ? 'text-white font-bold' : 'text-white/50 hover:text-white'
+                    }`}
                 >
                   {link.name}
                   {/* Clean static active underline (no scroll-tick rendering) */}
@@ -171,9 +170,8 @@ const Navbar = ({ activeSection }: NavbarProps) => {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.1 + i * 0.1, ease }}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`text-2xl font-bold tracking-tight transition-colors flex items-center gap-2 ${
-                        isActive ? 'text-white' : 'text-white/50 hover:text-white'
-                      }`}
+                      className={`text-2xl font-bold tracking-tight transition-colors flex items-center gap-2 ${isActive ? 'text-white' : 'text-white/50 hover:text-white'
+                        }`}
                     >
                       {link.name}
                       {isActive && (
@@ -232,9 +230,9 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8, ease }}
-          className="text-[15px] md:text-[19px] leading-snug md:leading-normal text-white/70 max-w-2xl font-normal tracking-tight mb-12 text-left md:text-justify word-gap-mobile"
+          className="text-[15px] md:text-[18px] leading-relaxed text-white/70 max-w-2xl font-normal tracking-tight mb-12 text-left md:text-justify word-gap-mobile"
         >
-          Security and systems, that's where most of my work lives.Security and systems, that's where most of my work lives. Database engineering, secure backend development, and applied cybersecurity, rooted in industry standards and shaped by hands-on testing. New tools and technologies are just problems I haven't solved yet. Outside of that, a YouTube channel I once built from scratch hit 2 million views, turns out the same curiosity drives everything.
+          Security and systems, that's where most of my work lives. Database engineering, secure backend development, and applied cybersecurity, rooted in industry standards and shaped by hands-on testing. New tools and technologies are just problems I haven't solved yet. Outside of that, a YouTube channel I once built from scratch hit 2 million views, turns out the same curiosity drives everything.
         </motion.p>
 
         <motion.div
@@ -421,9 +419,8 @@ const SideProjectCard = ({ title, description, delay, link, linkType = 'live', r
       whileInView={{ opacity: 1, y: 0 }}
       viewport={cardInView}
       transition={{ delay, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className={`glass-panel p-6 md:p-10 rounded-[32px] flex flex-col group glass-hover h-full relative ${
-        featured ? 'border-2 featured-outline-glow' : ''
-      }`}
+      className={`glass-panel p-6 md:p-10 rounded-[32px] flex flex-col group glass-hover h-full relative ${featured ? 'border-2 featured-outline-glow' : ''
+        }`}
     >
       {featured && (
         <div className="absolute -top-3 right-6 md:right-8 z-10 px-3 py-1 rounded-full bg-brand-bg border-2 featured-outline-glow text-[10px] md:text-[11px] font-bold text-brand-primary uppercase tracking-widest">
@@ -433,7 +430,7 @@ const SideProjectCard = ({ title, description, delay, link, linkType = 'live', r
       <h4 className="text-[15px] md:text-[17px] font-bold text-white tracking-tight mb-3 md:mb-4 group-hover:text-brand-primary transition-colors duration-500">
         {title}
       </h4>
-      <div className={`text-[12px] md:text-[14px] text-white/50 leading-relaxed font-medium mb-4 md:mb-0 flex-grow ${isExpanded ? 'block' : 'line-clamp-2 md:line-clamp-none'}`}>
+      <div className={`text-[13px] md:text-[15px] text-white/50 leading-relaxed font-medium mb-4 md:mb-0 flex-grow ${isExpanded ? 'block' : 'line-clamp-2 md:line-clamp-none'}`}>
         {description}
       </div>
       <button
@@ -456,11 +453,10 @@ const SideProjectCard = ({ title, description, delay, link, linkType = 'live', r
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className={`mt-6 self-start ${
-            linkType === 'github'
+          className={`mt-6 self-start ${linkType === 'github'
               ? githubButtonClassName
               : 'inline-flex items-center justify-center gap-2 md:gap-2.5 px-5 py-2.5 md:px-7 md:py-3.5 rounded-full text-[12px] md:text-[14px] font-bold tracking-tight active:scale-[0.98] transition-all group/btn bg-brand-primary text-white border border-brand-primary/50 shadow-[0_0_32px_rgba(59,130,246,0.45)] hover:shadow-[0_0_48px_rgba(59,130,246,0.65)] hover:brightness-110'
-          }`}
+            }`}
         >
           {linkType === 'github' ? 'View on GitHub' : 'Visit Live App'}
           {linkType === 'github' ? (
@@ -531,7 +527,7 @@ const Experience = () => {
                     <p className="text-lg font-medium text-white/40 mb-6 font-mono tracking-tight">
                       {exp.role}
                     </p>
-                    <p className="text-white/30 text-sm leading-relaxed max-w-sm">
+                    <p className="text-white/50 text-[13px] md:text-[15px] leading-relaxed max-w-sm">
                       {exp.description}
                     </p>
                   </div>
@@ -557,8 +553,8 @@ const Skills = () => {
       title: 'Cybersecurity',
       icon: <Shield className="w-6 h-6" />,
       skills: [
-        'Network Security', 
-        'SOC Fundamentals', 
+        'Network Security',
+        'SOC Fundamentals',
         'Cryptography',
         'Web Application Security',
         'Vulnerability Assessment',
@@ -667,6 +663,13 @@ const Certifications = () => {
       date: '2024',
       image: `${basePath}cert_cisco_cybersecurity.png`,
       link: 'https://www.linkedin.com/in/sohaib-tausif-3a2153394/details/certifications/'
+    },
+    {
+      name: 'Networking Basics',
+      issuer: 'Cisco Networking Academy',
+      date: '2024',
+      image: `${basePath}cert_cisco_networking_basics.png?v=2`,
+      link: 'https://www.credly.com/badges/3a5a6e69-7c7a-4822-b6bd-efc22b97ec1a/linked_in_profile'
     },
     {
       name: 'Introduction to Web Scraping',
@@ -805,7 +808,7 @@ const Certifications = () => {
               </svg>
               Developer Profile
             </h3>
-            <p className="text-white/50 text-[13px] md:text-[15px] max-w-xl">
+            <p className="text-white/50 text-[13px] md:text-[15px] leading-relaxed max-w-xl">
               Official achievements and credentials earned through the Google Developer Program.
             </p>
           </div>
@@ -864,7 +867,7 @@ const Labs = () => {
           <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-6">
             Practical Labs<span className="text-brand-primary">.</span>
           </h2>
-          <p className="max-w-xl text-white/50 text-lg font-medium tracking-tight">
+          <p className="max-w-xl text-white/50 text-[15px] md:text-[18px] leading-relaxed font-medium tracking-tight">
             Hands-on cyber security training, vulnerability research, and threat simulation platforms.
           </p>
         </div>
@@ -879,7 +882,7 @@ const Labs = () => {
             className="glass-panel rounded-[24px] md:rounded-[32px] group glass-hover p-8 md:p-10 relative overflow-hidden flex flex-col h-full"
           >
             <div className="absolute -right-10 -top-10 w-40 h-40 bg-[#9FEF00]/5 rounded-full blur-[40px] group-hover:bg-[#9FEF00]/10 transition-colors duration-500 pointer-events-none" />
-            
+
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 border border-white/10 group-hover:border-[#9FEF00]/30 transition-all">
                 <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="#9FEF00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -974,7 +977,7 @@ const Labs = () => {
                 <h4 className="text-[12px] font-bold text-white/30 uppercase tracking-widest mb-4">
                   Completed Rooms
                 </h4>
-                
+
                 <div className="space-y-6">
                   <div>
                     <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2 block">
@@ -1115,7 +1118,7 @@ const TerminalBackground = () => {
       'ping -c 4 8.8.8.8',
       'tar -czvf backup.tar.gz /data'
     ];
-    
+
     const interval = setInterval(() => {
       setTexts(prev => {
         const newText = {
@@ -1149,7 +1152,7 @@ const TerminalBackground = () => {
                 initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
                 animate={{ opacity: 1, clipPath: 'inset(0 0% 0 0)' }}
                 exit={{ opacity: 0, filter: 'blur(8px)', y: -10 }}
-                transition={{ 
+                transition={{
                   opacity: { duration: 0.5 },
                   clipPath: { duration: 2, ease: "linear" },
                   exit: { duration: 2 }
@@ -1233,7 +1236,7 @@ const Creator = () => {
           <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-6">
             Content Creation<span className="text-brand-primary">.</span>
           </h2>
-          <p className="max-w-xl text-white/50 text-base md:text-lg font-medium tracking-tight">
+          <p className="max-w-xl text-white/50 text-[15px] md:text-[18px] leading-relaxed font-medium tracking-tight">
             Building digital audiences, managing social media channels, and creating engaging online content.
           </p>
         </div>
@@ -1343,12 +1346,12 @@ export default function App() {
     const handleScroll = () => {
       const sectionIds = ['hero', 'about', 'projects', 'labs', 'experience', 'skills', 'certificates', 'creator', 'contact'];
       let currentSection = 'hero';
-      
+
       const viewportCenter = window.innerHeight * 0.35; // 35% from top of the screen is the focus point
-      
+
       let closestSection = 'hero';
       let minDistance = Infinity;
-      
+
       for (const id of sectionIds) {
         const el = document.getElementById(id);
         if (el) {
@@ -1359,21 +1362,21 @@ export default function App() {
           } else if (rect.bottom < viewportCenter) {
             distance = viewportCenter - rect.bottom;
           }
-          
+
           if (distance < minDistance) {
             minDistance = distance;
             closestSection = id;
           }
         }
       }
-      
+
       currentSection = closestSection;
-      
+
       // Force last section to be active when scrolled to the very bottom
       if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100) {
         currentSection = 'contact';
       }
-      
+
       setActiveSection(currentSection);
     };
 
@@ -1445,7 +1448,7 @@ export default function App() {
                   <span className="text-white/50">@ GIKI.</span>
                 </h2>
                 <div className="max-w-2xl space-y-6 relative z-10">
-                  <p className="text-[17px] text-white/60 leading-relaxed font-medium">
+                  <p className="text-[15px] md:text-[18px] leading-relaxed text-white/60 font-medium">
                     I specialize in bridging the gap between bulletproof backend security and seamless user
                     experiences. My engineering philosophy revolves around building high performance systems
                     that are intuitive on the surface but incredibly secure under the hood.
@@ -1558,7 +1561,7 @@ export default function App() {
               <h2 className="text-4xl md:text-7xl font-bold tracking-tighter text-white mb-6">
                 Projects<span className="text-brand-primary">.</span>
               </h2>
-              <p className="max-w-xl text-white/50 text-lg font-medium tracking-tight">
+              <p className="max-w-xl text-white/50 text-[15px] md:text-[18px] leading-relaxed font-medium tracking-tight">
                 Engineering security systems and web applications with architectural integrity.
               </p>
             </div>

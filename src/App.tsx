@@ -558,7 +558,7 @@ const Skills = () => {
         'Cryptography',
         'Web Application Security',
         'Vulnerability Assessment',
-        'Access Control Testing',
+        'SIEM',
         'Threat Detection & Analysis'
       ]
     },
@@ -570,7 +570,7 @@ const Skills = () => {
     {
       title: 'Tools & Technologies',
       icon: <Wrench className="w-6 h-6" />,
-      skills: ['Git & GitHub', 'Burp Suite', 'Linux (Basic)', 'Shodan', 'Web Scraping (Python, Beautiful Soup)', 'Jira']
+      skills: ['Git & GitHub', 'Splunk', 'Burp Suite', 'Linux (Basic)', 'Shodan', 'Web Scraping (Python, Beautiful Soup)', 'Jira']
     },
     {
       title: 'Hardware & Systems',
@@ -684,6 +684,13 @@ const Certifications = () => {
       date: '2024',
       image: `${basePath}cert_tryhackme_analyst.png?v=3`,
       link: 'https://www.linkedin.com/in/sohaib-tausif-3a2153394/details/certifications/'
+    },
+    {
+      name: 'Cyber Security Analyst Career Path',
+      issuer: 'Cisco Networking Academy',
+      date: '2024',
+      image: `${basePath}cert_cisco_cybersecurity_analyst.png`,
+      link: 'https://www.credly.com/badges/a3ad9eda-1edb-4b1f-adbd-186fc3d45f68/linked_in_profile'
     }
   ];
 

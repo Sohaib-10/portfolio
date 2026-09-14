@@ -1680,7 +1680,7 @@ export default function App() {
                 delay={0.3}
                 imageUrl={`${basePath}NorthStar.jpeg`}
                 objectPosition="center 20%"
-                report="NorthStar Project Report.pdf"
+                report="NorthStar Report.pdf"
               />
               <ProjectCard
                 title="Statistical Analysis using Python"
